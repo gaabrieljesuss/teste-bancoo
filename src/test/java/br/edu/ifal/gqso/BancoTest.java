@@ -14,11 +14,12 @@ public class BancoTest {
     @BeforeEach
     public void setUp() {
         this.banco = new Banco();
+        banco.setSaldo(200);
     }
 
     @Test
     public void saldoTest() {
-        
+        assertEquals(200, banco.saldo());
     }
     
     
